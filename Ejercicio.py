@@ -6,6 +6,18 @@ def vol_pircuadrada():
     areab=lado_base*lado_base
     vol=(areab*altura)/3
     print ("El volumen es ",vol," cm3")
+
+    
+    
+def Funcion2() :
+    a=float(input("Ingrese el valor de a del lado rectangular: "))
+    b=float(input("Ingrese el valor de b del lado rectangular: "))
+    h=float(input("Ingrese la altura de la piramide rectangular: "))
+
+    v=(a*b*h)/3
+
+    print("El volumen de la piramide con base rectangular es: ", "%1.2f"%v, "m3")
+
 #codigo
 var=1
 op=0
@@ -18,7 +30,7 @@ while (var!=0):
         var=0
     elif op==2:
         print("Seleccionaste Piramide de base triangular")
-            
+        Funcion2()
         var=0
     elif op==3:
         print("Seleccionaste Piramide de base cuadrada")
