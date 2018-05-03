@@ -7,6 +7,15 @@ def vol_pircuadrada():
     vol=(areab*altura)/3
     print ("El volumen es ",vol," cm3")
     
+import math
+def Funcion1():
+    r=float(input("Ingrese el radio de la esfera : "))
+    print("Radio: ",r , "m")
+    v=4/3*math.pi*pow(r,3)
+
+    print("El volumen de la esfera es: ", "%1.2f" %v , "m3")
+
+
 def Funcion2() :
     a=float(input("Ingrese el valor de a del lado rectangular: "))
     b=float(input("Ingrese el valor de b del lado rectangular: "))
@@ -43,8 +52,8 @@ while (var!=0):
         vol_pircuadrada()   
         var=0
     elif op==4:
-        print("Seleccionaste Esferar")
-        
+        print("Seleccionaste Esfera")
+        Funcion1()
         var=0
     elif op==5:
         print ("GRACIAS")
